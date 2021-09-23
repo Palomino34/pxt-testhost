@@ -1,0 +1,10 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-brainpadpulse/bluebird.min.js
+/pxt-brainpadpulse/pxtsim.js
+/pxt-brainpadpulse/common-sim.js
+/pxt-brainpadpulse/sim.js
+
+NETWORK:
+*

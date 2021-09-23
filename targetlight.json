@@ -1,0 +1,257 @@
+{
+  "id": "brainpad",
+  "platformid": "codal",
+  "nickname": "brainpad",
+  "name": "GHI Brain Pad",
+  "title": "GHI Brain Pad - Blocks / Javascript editor",
+  "description": "A Blocks / JavaScript code editor for the GHI Brain Pad.",
+  "corepkg": "brainpad",
+  "ignoreDocsErrors": true,
+  "serial": {
+    "useHF2": true,
+    "useEditor": true,
+    "log": true,
+    "noDeploy": true,
+    "editorTheme": {
+      "graphBackground": "#d9d9d9",
+      "lineColors": [
+        "#009DDC",
+        "#FB48C7",
+        "#40bf4a",
+        "#8073E5",
+        "#d25b33"
+      ]
+    }
+  },
+  "simulator": {
+    "autoRun": true,
+    "streams": false,
+    "aspectRatio": 1.8,
+    "parts": false,
+    "boardDefinition": {
+      "visual": "brainpad",
+      "gpioPinBlocks": [
+        [
+          "P0"
+        ],
+        [
+          "P1"
+        ],
+        [
+          "P2"
+        ],
+        [
+          "P3"
+        ],
+        [
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        [
+          "P8",
+          "P9",
+          "P10",
+          "P11",
+          "P12"
+        ],
+        [
+          "P16"
+        ]
+      ],
+      "gpioPinMap": {
+        "P0": "P0",
+        "P1": "P1",
+        "P2": "P2",
+        "P3": "P3",
+        "P4": "P4",
+        "P5": "P5",
+        "P6": "P6",
+        "P7": "P7",
+        "P8": "P8",
+        "P9": "P9",
+        "P10": "P10",
+        "P11": "P11",
+        "P12": "P12",
+        "P13": "P13",
+        "P14": "P14",
+        "P15": "P15",
+        "P16": "P16",
+        "P19": "P19",
+        "P20": "P20"
+      },
+      "i2cPins": {
+        "SDA": "P2",
+        "SCL": "P3"
+      },
+      "analogInPins": [
+        "A0",
+        "A4",
+        "A5"
+      ],
+      "groundPins": [
+        "GND_0",
+        "GND_1",
+        "GND_2"
+      ],
+      "threeVoltPins": [
+        "PWR_0",
+        "PWR_2"
+      ],
+      "attachPowerOnRight": true,
+      "onboardComponents": [
+        "accelerometer",
+        "buttonpair",
+        "speaker",
+        "thermometer",
+        "rgbsensor",
+        "lightsensor",
+        "microphone"
+      ],
+      "useCrocClips": true,
+      "marginWhenBreadboarding": [
+        0,
+        0,
+        80,
+        0
+      ]
+    }
+  },
+  "cloud": {
+    "workspace": false,
+    "packages": true,
+    "sharing": true,
+    "publishing": true,
+    "importing": false,
+    "preferredPackages": [],
+    "githubPackages": true
+  },
+  "compile": {
+    "isNative": true,
+    "useUF2": true,
+    "hasHex": true,
+    "deployDrives": ".*",
+    "deployFileMarker": "INFO.TXT",
+    "driveName": "BrainPad2",
+    "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/stm32f4x.cfg]",
+    "flashCodeAlign": 256,
+    "floatingPoint": true,
+    "taggedInts": true,
+    "upgrades": [
+      {
+        "type": "package",
+        "map": {}
+      },
+      {
+        "type": "api",
+        "map": {}
+      }
+    ],
+    "hidSelectors": [
+      {
+        "usagePage": "0xFF97",
+        "usageId": "0x0001",
+        "vid": "0x239A",
+        "pid": "0x0018"
+      },
+      {
+        "usagePage": "0xFF00",
+        "usageId": "0x0001",
+        "vid": "0x239A",
+        "pid": "0x0018"
+      },
+      {
+        "usagePage": "0xFF00",
+        "usageId": "0x0001",
+        "vid": "0x239A",
+        "pid": "0x0019"
+      },
+      {
+        "usagePage": "0xFF97",
+        "usageId": "0x0001",
+        "vid": "0x03EB",
+        "pid": "0x2402"
+      }
+    ],
+    "nativeType": "thumb",
+    "jsRefCounting": false,
+    "vtableShift": 2
+  },
+  "runtime": {
+    "mathBlocks": true,
+    "loopsBlocks": true,
+    "logicBlocks": true,
+    "variablesBlocks": true,
+    "textBlocks": true,
+    "listsBlocks": true,
+    "functionBlocks": true,
+    "onStartNamespace": "loops",
+    "onStartColor": "#40bf4a",
+    "onStartWeight": 100
+  },
+  "compileService": {
+    "buildEngine": "codal",
+    "codalTarget": {
+      "name": "codal-brainpad",
+      "url": "https://github.com/Palomino34/codal-brainpad",
+      "branch": "master",
+      "type": "git"
+    },
+    "codalBinary": "BRAINPAD",
+    "yottaConfig": {
+      "pxt": {
+        "board": {
+          "id": "BOARD_ID_CPLAY"
+        }
+      }
+    },
+    "githubCorePackage": "lancaster-university/codal",
+    "gittag": "master",
+    "serviceId": "brainpad"
+  },
+  "versions": {
+    "target": "0.21.27",
+    "pxt": "4.3.1"
+  },
+  "blocksprj": {
+    "id": "blocksprj",
+    "config": {
+      "name": "{0}",
+      "dependencies": {
+        "brainpad": "*"
+      },
+      "description": "",
+      "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+      ],
+      "additionalFilePaths": []
+    },
+    "files": {
+      "main.blocks": "<xml xmlns=\"http://www.w3.org/1999/xhtml\">\n  <block type=\"pxt-on-start\"></block>\n  <block type=\"forever\"></block>\n</xml>",
+      "main.ts": "\n",
+      "README.md": ""
+    }
+  },
+  "tsprj": {
+    "id": "tsprj",
+    "config": {
+      "name": "{0}",
+      "dependencies": {
+        "brainpad": "*"
+      },
+      "description": "",
+      "files": [
+        "main.ts",
+        "README.md"
+      ],
+      "additionalFilePaths": []
+    },
+    "files": {
+      "main.ts": "\n",
+      "README.md": ""
+    }
+  }
+}

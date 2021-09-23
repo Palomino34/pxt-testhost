@@ -1,0 +1,72 @@
+CACHE MANIFEST
+
+CACHE:
+/pxt-brainpadpulse/semantic.js
+/pxt-brainpadpulse/main.js
+/pxt-brainpadpulse/pxtapp.js
+/pxt-brainpadpulse/typescript.js
+/pxt-brainpadpulse/marked/marked.min.js
+/pxt-brainpadpulse/highlight.js/highlight.pack.js
+/pxt-brainpadpulse/jquery.js
+/pxt-brainpadpulse/pxtlib.js
+/pxt-brainpadpulse/pxtcompiler.js
+/pxt-brainpadpulse/pxtblockly.js
+/pxt-brainpadpulse/pxtwinrt.js
+/pxt-brainpadpulse/pxteditor.js
+/pxt-brainpadpulse/pxtsim.js
+/pxt-brainpadpulse/pxtembed.js
+/pxt-brainpadpulse/pxtworker.js
+/pxt-brainpadpulse/pxtweb.js
+/pxt-brainpadpulse/blockly.css
+/pxt-brainpadpulse/semantic.css
+/pxt-brainpadpulse/rtlsemantic.css
+
+
+/pxt-brainpadpulse/editor.js
+
+
+# blockly
+/pxt-brainpadpulse/blockly/media/sprites.png
+/pxt-brainpadpulse/blockly/media/click.mp3
+/pxt-brainpadpulse/blockly/media/disconnect.wav
+/pxt-brainpadpulse/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/pxt-brainpadpulse/vs/loader.js
+/pxt-brainpadpulse/vs/base/worker/workerMain.js
+/pxt-brainpadpulse/vs/basic-languages/src/bat.js
+/pxt-brainpadpulse/vs/basic-languages/src/cpp.js
+/pxt-brainpadpulse/vs/editor/editor.main.css
+/pxt-brainpadpulse/vs/editor/editor.main.js
+/pxt-brainpadpulse/vs/editor/editor.main.nls.js
+/pxt-brainpadpulse/vs/language/json/jsonMode.js
+/pxt-brainpadpulse/vs/language/json/jsonWorker.js
+/pxt-brainpadpulse/vs/language/typescript/lib/typescriptServices.js
+/pxt-brainpadpulse/vs/language/typescript/src/mode.js
+/pxt-brainpadpulse/vs/language/typescript/src/worker.js
+
+# charts
+/pxt-brainpadpulse/smoothie/smoothie_compressed.js
+/pxt-brainpadpulse/images/Bars_black.gif
+
+# ai
+/pxt-brainpadpulse/ai.0.js
+
+/pxt-brainpadpulse/worker.js
+/pxt-brainpadpulse/monacoworker.js
+
+# ver Thu Sep 23 2021 12:46:57 GMT-0400 (Eastern Daylight Time)
+
+# target
+/pxt-brainpadpulse/docs\static\logo.png
+/pxt-brainpadpulse/docs\static\logo.square.png
+/pxt-brainpadpulse/docs\static\logo.square.png
+/pxt-brainpadpulse/docs\static\logo.square.png
+/pxt-brainpadpulse/docs\static\Microsoft-logo_rgb_c-gray-square.png
+/pxt-brainpadpulse/docs\static\Microsoft-logo_rgb_c-white.png
+/pxt-brainpadpulse/docs\static\hero.jpg
+
+/pxt-brainpadpulse/target.js
+  
+NETWORK:
+*
